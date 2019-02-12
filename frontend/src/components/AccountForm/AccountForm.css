@@ -1,0 +1,125 @@
+
+.AccountForm {
+    width: 70%;
+    background-color: white;
+    padding: 30px !important;
+}
+
+.AccountForm :global(.ant-form-item-label label) {
+    float: left;
+}
+
+.AccountForm :global(.has-error .ant-form-explain) {
+    margin: 5px 0;
+}
+
+.AccountForm :global(.ant-form-item-children) {
+    display: flex;
+    justify-content: space-between;
+}
+
+.AccountForm :global(.ant-input) {
+    width: 50%;
+}
+
+.ChangeButton {
+    background-color: var(--color1);
+    color: white;
+}
+
+.ChangeButton:hover {
+    background-color: white;
+    color: var(--color1);
+}
+
+.form_disabled, .form_disabled:hover, .form_disabled:focus, .form_disabled:active {
+    box-shadow: initial !important;
+    border-width: 0 !important;
+    padding: 0;
+    background-color: inherit;
+    opacity: initial !important;
+    cursor: initial !important;
+    pointer-events: none;
+    color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.formItem_hidden {
+    display: none;
+}
+
+.transferWindow > div > button {
+    display: none;
+}
+
+.remind {
+    text-align: center;
+}
+
+.remindBox {
+    width: 100%;
+    background-color: #edf9fe;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.remindBox > .remindText {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.remind > a {
+    color: var(--color1);
+    text-decoration: underline;
+}
+
+.AccountSettingsFormHeader {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color1);
+    margin-top: 20px;
+}
+
+.changePasswordForm {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.changePasswordForm :global(.ant-form-explain) {
+    margin: 5px 0;
+}
+
+.changePasswordForm:nth-child(3) {
+    margin-top: 0;
+}
+
+.changePasswordForm a {
+    margin-top: 0;
+    font-weight: bold;
+    border-bottom: 1px solid #374363;
+}
+
+.changePasswordForm a:hover {
+    color: #186cdb;
+    border-bottom: 1px solid #186cdb;
+}
+
+.changePasswordForm input {
+    border-radius: 6px;
+}
+
+.changePasswordForm .savePwdButton > *{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 20px
+}
+
+
+.modalBody > div > div {
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}

@@ -1,0 +1,14 @@
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.App > .ant-spin {
+  display: block;
+  margin: 0 auto;
+  margin-top: 45vh;
+}
+
+.App > .ant-spin > span > i {
+  background-color: red;
+}

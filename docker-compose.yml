@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  django:
+    restart: always
+    build:
+      context: ./backend
+      dockerfile: ./deploy/Dockerfile
+    volumes:
+      - ./backend:/project
+    ports:
+      - 8000:8000
+    command: sh /project/deploy/entrypoint.sh
+    depends_on:
+      - redis
+
+  nodejs:
+    restart: always
+    build:
+      context: ./frontend
+      dockerfile: ./deploy/Dockerfile
+    volumes:
+      - ./frontend/public:/project/public
+      - ./frontend/src:/project/src
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - API_HOST=http://localhost:8000/api
+    command: yarn start
+
+  redis:
+    restart: always
+    image: redis:5
+    expose:
+      - 6379

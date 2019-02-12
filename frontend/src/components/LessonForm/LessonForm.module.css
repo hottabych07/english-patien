@@ -1,0 +1,65 @@
+
+
+.responsiveForm  > div:nth-child(2) > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.responsiveForm  > div:nth-child(2) > div > section {
+    width: 45%;
+}
+
+.responsiveForm  > div:nth-child(2) {
+    width: 76%;
+}
+
+.colorSection {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.colorSection > span {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-weight: bold;
+}
+
+.colorSection > div {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 4px 10px;
+    border-radius: 50%;
+    transition: 0.1s ease-in;
+}
+
+.colorSection > div > i {
+    transition: 0.1s;
+}
+
+.hideIcon > i {
+    opacity: 0;
+}
+
+
+.colorSection > div:hover {
+    width: 42px;
+    height: 42px;
+}
+
+@media (max-width: 500px) {
+    .responsiveForm  > div:nth-child(2) > div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .responsiveForm  > div:nth-child(2) > div > section {
+        width: 100%;
+    }
+}

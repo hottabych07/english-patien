@@ -1,0 +1,40 @@
+.Main, .Main > div {
+    min-height: 100vh;
+}
+
+.Main > .ant-layout > .ant-layout {
+    z-index: 10;
+}
+
+.Main > .ant-layout > .ant-layout > .ant-layout-header {
+    background-color: white;
+    padding: 0 20px;
+}
+
+.Main > .ant-layout > .ant-layout > *, .Main > .ant-layout > .ant-layout-sider {
+    transition: 0.4s;
+}
+
+@media (max-width: 500px) {
+    .Main > .ant-layout > .ant-layout-sider {
+        width: calc(100% - 62px) !important;
+        min-width: calc(100% - 62px) !important;
+        flex: 0 0 calc(100% - 62px) !important;
+    }
+    .collapsedItem {
+        min-width: 100vw;
+        margin-left: calc(-100vw + 62px);
+    }
+}
+
+.menuCollapsed > .ant-layout > .ant-layout-sider {
+    width: 0 !important;
+    min-width: 0 !important;
+    flex: 0 0 0 !important;
+}
+
+.PageFooter {
+    text-align: center;
+}
+
+

@@ -1,0 +1,24 @@
+
+.Login {
+    height: 100vh;
+    position: relative;
+    background: white url("../../assets/img/airplane.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 750px;
+    padding-top: 100px;
+}
+
+.Login_blur {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f8483f;
+    opacity: 0.4;
+}
+
+
+

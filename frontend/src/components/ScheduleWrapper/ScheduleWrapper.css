@@ -1,0 +1,46 @@
+
+.SheduleWrapper {
+    display: inline-block;
+    padding: 0 14px 14px;
+    overflow-x: auto;
+    min-height: 300px;
+    background-color: white;
+}
+
+.SheduleWrapper > .scheduler {
+    margin: 18px 0;
+}
+
+.SheduleWrapper > button:nth-child(2) {
+    margin-right: 16px;
+}
+
+.SheduleWrapper::-webkit-scrollbar-thumb {
+    background-color: #dadbdf;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+
+.SheduleWrapper::-webkit-scrollbar {
+    width: 10px;
+}
+
+.SheduleWrapper :global(th) {
+    font-size: 14px;
+}
+
+.SheduleWrapper :global(.header2-text-label) {
+    font-size: 16px;
+}
+
+.SheduleWrapper :global(.ant-radio-group > label) {
+    height: 40px;
+    line-height: 40px;
+}
+
+.ant-row-flex-space-between > div:nth-child(2) > .header2-text {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

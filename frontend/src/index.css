@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --color1: #f8483f;
+    --color2: #000000;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a, a:focus, a:hover, a:visited {
+    color: var(--color1);
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./assets/fonts/icomoon.eot?xfpoeq');
+    src: url('./assets/fonts/icomoon.eot?xfpoeq#iefix') format('embedded-opentype'),
+    url('./assets/fonts/icomoon.ttf?xfpoeq') format('truetype'),
+    url('./assets/fonts/icomoon.woff?xfpoeq') format('woff'),
+    url('./assets/fonts/icomoon.svg?xfpoeq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ant-pagination :global(a),
+.ant-pagination :global(a:focus),
+.ant-pagination :global(a:hover),
+.ant-pagination :global(a:visited) {
+    color: var(--color1) !important;
+}
+
+.icon-man-user:before {
+    content: "\e905";
+    color: #fff;
+}
+
+.icon-percentage:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.icon-study:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.icon-calendar:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.icon-credit-cards-payment:before {
+    content: "\e903";
+    color: #fff;
+}
+
+.icon-multiple-users-silhouette:before {
+    content: "\e904";
+    color: #fff;
+}
+
+.icon-cog:before {
+    content: "\e994";
+}
+
+.ant-input, .ant-input-number, .ant-btn {
+    height: 40px;
+}
+
+.ant-input-number {
+    width: 100%;
+    line-height: 40px;
+}
+
+.ant-input-number-input-wrap:focus {
+    outline-color: var(--color1);
+}
+
+.ant-input-number-handler-wrap {
+    display: none;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-input-number-focused {
+    border-color: var(--color1);
+    border-right-width: 1px;
+}
+
+.ant-input:focus, .ant-input-number:focus {
+    border-color: var(--color1);
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(248, 72, 63, 0.2);
+    border-right-width: 1px;
+}
+
+.ant-input:hover, .ant-input-number:hover  {
+    border-color: var(--color1);
+    border-right-width: 1px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+    border-color: var(--color1);
+}
+
+.ant-btn-primary {
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+    background-color: #ff5b51;
+    border-color: #ff5b51;
+}
+
+.ant-form-item-label label {
+    color: rgba(55, 55, 55, 0.85);
+    font-weight: bold;
+}
+
+.ant-form-item-required:before {
+    margin-right: 0;
+    content: "";
+}
+
+.page {
+    padding: 30px 40px;
+}
+
+.page > div {
+    overflow-x: auto;
+}
+
+.ant-dropdown-menu-item:hover, .ant-dropdown-menu-submenu-title:hover, .ant-select-dropdown-menu-item-active {
+    background-color: #ffe6e6;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #262626;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
+    background-color: var(--color1);
+}
+
+.ant-badge-count {
+    top: -4px;
+    right: 22px;
+    height: 18px;
+    min-width: 18px;
+    line-height: 18px;
+    font-size: 10px;
+}
+
+.ant-btn:hover, .ant-btn:focus {
+    color: var(--color1);
+    background-color: #fff;
+    border-color: var(--color1);
+}
+
+.ant-modal-mask {
+    background-color: rgba(0, 0, 0, 0.30);
+}
+
+.ant-modal-close {
+    right: -60px;
+    color: white !important;
+    top: -15px;
+}
+
+.ant-modal-content {
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+
+.modalBody > div > div {
+    padding-bottom: 50px;
+}
+
+.ant-modal-footer, .ant-modal-header {
+    display: none;
+}
+
+.disabled, .disabled:active, .disabled:hover {
+    cursor: initial;
+    pointer-events: none;
+    opacity: 0.5;
+    background-color: inherit !important;
+}
+
+.disabledItem, .disabledItem:hover, .disabledItem:focus, .disabledItem:active {
+    box-shadow: initial !important;
+    border-width: 0 !important;
+    padding: 0;
+}
+
+.disabledItem {
+    pointer-events: none;
+    background-color: inherit;
+    opacity: initial;
+    cursor: initial;
+    color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.ant-select-selection--multiple {
+    min-height: 42px;
+}
+
+.ant-select-selection--multiple > ul > li, .ant-select-selection--multiple .ant-select-selection__rendered > ul > li {
+    margin-top: 3px;
+    height: 34px;
+    line-height: 34px;
+}
+
+.ant-select-open .ant-select-selection, .ant-select-selection:hover, .ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled),
+.ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+    border-color: var(--color1);
+}
+
+.ant-select-selection--multiple .ant-select-selection__rendered {
+    line-height: 40px;
+}
+
+.ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+    box-shadow: 0 0 0 2px rgba(255, 24, 24, 0.2)
+}
+
+.ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected .ant-select-selected-icon, .ant-select-dropdown.ant-select-dropdown--multiple .ant-select-dropdown-menu-item-selected:hover .ant-select-selected-icon,
+.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled),
+.ant-calendar-header a:hover {
+    color: var(--color1);
+}
+
+.ant-calendar-selected-date .ant-calendar-date, .ant-calendar-selected-start-date .ant-calendar-date, .ant-calendar-selected-end-date .ant-calendar-date,
+.ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year,
+.ant-calendar-year-panel-selected-cell .ant-calendar-year-panel-year:hover,
+.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month,
+.ant-calendar-month-panel-selected-cell .ant-calendar-month-panel-month:hover {
+    background: var(--color1);
+}
+
+.ant-select-dropdown-menu-item:hover {
+    background-color: #ffe6e6;
+}
+
+.ant-calendar-today .ant-calendar-date {
+    color: var(--color1);
+    border-color: var(--color1);
+}
+
+.ant-calendar-selected-day .ant-calendar-date, .ant-calendar-year-panel-year:hover,
+.ant-calendar-date:hover, .ant-calendar-month-panel-month:hover {
+    background: #ffe6e6;
+}
+
+.ant-select-selection {
+    min-height: 40px;
+    line-height: 40px;
+}
+
+.ant-select-selection > div {
+    line-height: 40px;
+}
+
+.ant-calendar-picker, .ant-time-picker  {
+    width: 100%;
+}
+
+.changePasswordForm :global(.ant-time-picker-input) {
+    height: 40px;
+}
+
+.ant-time-picker-input:focus {
+    border-color: var(--color1);
+    outline: 0;
+    box-shadow: 0 0 0 2px rgba(255, 24, 17, 0.2);
+    border-right-width: 1px !important;
+}
+
+.ant-time-picker-input:hover {
+    border-color: var(--color1);
+    border-right-width: 1px !important;
+}
+
+.ant-time-picker-panel-input-wrap {
+    height: 42px;
+}
+
+.ant-radio-button-wrapper-checked {
+    background-color: var(--color1);
+    border-color: var(--color1);
+    box-shadow: -1px 0 0 0 var(--color1);
+}
+
+.ant-radio-button-wrapper-checked:active, .ant-radio-button-wrapper-checked:hover {
+    border-color:var(--color1);
+    box-shadow: -1px 0 0 0 var(--color1);
+    color: white;
+}
+
+.ant-radio-button-wrapper:hover, .ant-radio-button-wrapper-focused {
+    color: var(--color1);
+}
+
+.ant-radio-button-wrapper-checked:hover {
+    color: white;
+}
+
+.ant-fullcalendar-year-select > div, .ant-fullcalendar-month-select > div {
+    min-height: 24px;
+}
+
+.ant-fullcalendar-year-select > div {
+    margin-right: 10px
+}
+
+.ant-radio-button-wrapper-checked:first-child {
+    border-color: var(--color1) ;
+}
+
+.ant-fullcalendar-selected-day .ant-fullcalendar-value, .ant-fullcalendar-month-panel-selected-cell .ant-fullcalendar-value {
+    background-color: var(--color1);
+}
+
+.ant-fullcalendar-today .ant-fullcalendar-value, .ant-fullcalendar-month-panel-current-cell .ant-fullcalendar-value {
+    box-shadow: 0 0 0 1px #ff1818 inset;
+}
+
+
+.ant-col-22 > .header2-text {
+    color: #f8483f !important;
+    font-weight: bold;
+}
+
+.header1-text, .overflow-text  > .header2-text  {
+    color: black !important;
+    font-weight: normal;
+}
+
+.ant-popover-inner-content > div > div:last-child > .ant-col-22 > .header2-text:first-child {
+    background-color: inherit;
+    opacity: initial;
+    color: black !important;
+}
+
+.ant-calendar-input-wrap {
+    height: 40px;
+}
+
+.icon-nav:hover {
+    color: var(--color1) !important;
+}
+
+.ant-form-item-label label:after {
+    content: " ";
+}
+
+.ant-pagination-item-active,
+.ant-pagination-item-active:focus,
+.ant-pagination-item-active:hover {
+    border-color: var(--color1)
+}
+
+.ant-time-picker-panel-narrow .ant-time-picker-panel-input-wrap {
+    max-width: 140px;
+}
+
+.ant-time-picker-panel-select {
+    width: 70px;
+}
+
+@media (max-width: 1100px) {
+    .AccountForm {
+        width: 100%;
+        padding: 1vw;
+    }
+}
+
+@media (min-width: 600px) {
+    .Header__rightWrapper {
+        display: initial !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .page {
+        padding: 30px 20px;
+    }
+
+    .PageHeader > h1 {
+        font-size: 24px;
+    }
+
+    .Menu > ul > li, .Menu > ul > li > div > div {
+        font-size: 20px !important;
+    }
+
+    .Menu > ul > li > ul > li {
+        font-size: 18px !important;
+    }
+
+    .Header__rightWrapper > .ant-dropdown-link > div,
+    .Header__rightWrapper > img {
+        display: none;
+    }
+
+    .Header__rightWrapper > .ant-dropdown-link > img {
+        display: initial;
+    }
+
+    .AccountForm :global(.ant-form-item-children) {
+        flex-direction: column;
+    }
+
+    .AccountForm :global(.ant-input) {
+        min-width: 100%;
+    }
+
+    .ChangeButton {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
