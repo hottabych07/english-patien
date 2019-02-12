@@ -2,9 +2,9 @@
 
 Backend - Django rest framework, Frontend - React+redux
 
-[Скриншоты](https://imgur.com/a/GR4Zl2p)
+[Screenshots](https://imgur.com/a/GR4Zl2p)
 
-## Установка
+## Install
 **1.**
 ```
 docker-compose build
@@ -15,14 +15,14 @@ docker-compose build
 docker-compose up
 ```
 
-## Разработка
+## Developer
 
-**Запуск локального стенда:**
+**Start local stand:**
 ```
 docker-compose up
 ```
 
-**Остановка локального стенда:**
+**Stop local stand:**
 ```
 docker-compose stop
 ```
