@@ -1,5 +1,8 @@
 # The English Patient
 
+Backend - Django rest framework
+Frontend - React+redux
+
 ## Установка
 **1.**
 ```
@@ -22,3 +25,5 @@ docker-compose up
 ```
 docker-compose stop
 ```
+
+![Скриншоты](https://imgur.com/a/GR4Zl2p)
