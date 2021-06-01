@@ -30,7 +30,7 @@ oauthlib==2.1.0
 python3-openid==3.1.0
 requests==2.20.0
 requests-oauthlib==1.0.0
-urllib3==1.24
+urllib3==1.26.5
 
 # django-extensions
 django-extensions==2.1.3
